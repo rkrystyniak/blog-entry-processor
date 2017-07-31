@@ -1,2 +1,2 @@
 # blog-entry-processor
-A npm package that's going to be used with my serverless blog which is completely s3 driven.
+A npm package that's going to be used with my serverless blog which is completely s3 driven. I use this as part of my build process to auto-generate a TypeScript file which contains an array of blog entries.

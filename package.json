@@ -1,0 +1,23 @@
+{
+  "name": "blog-entry-processor",
+  "version": "1.0.0",
+  "description": "Iterates through static blog files and creates the appropriate data file for it.",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/rkrystyniak/blog-entry-processor"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Krystyniak",
+  "license": "GPLv3",
+  "bin": {
+    "process-blogs": "./index.js"
+  },
+  "dependencies": {
+    "date-and-time": "^0.5.0",
+    "url-safe-string": "^1.1.0",
+    "xml2json": "^0.11.0"
+  }
+}
