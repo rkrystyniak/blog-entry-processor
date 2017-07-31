@@ -1,6 +1,6 @@
 {
   "name": "blog-entry-processor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iterates through static blog files and creates the appropriate data file for it.",
   "repository": {
     "type" : "git",
