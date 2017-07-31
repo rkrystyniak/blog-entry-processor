@@ -24,7 +24,7 @@ function generateBlogEntries() {
 
     fs.writeFile(blogEntriesFile, blogEntriesFileContent, (err) => {
         if (err) throw err;
-        console.log('The file has been saved!');
+        console.log('Blog Entries have been updated!');
     });
 }
 
@@ -34,6 +34,9 @@ function generateBlogEntriesFileContent(blogEntries) {
         "// Modify blog files and rebuild to modify this file.\n" +
         "import { BlogEntry } from '../models/blogentry';\n\n" +
         "export const BLOGENTRIES: BlogEntry[] = [\n";
+
+    // Make sure the newest blog entries come first
+    blogEntries.reverse();
 
     blogEntries.forEach(function (blogEntry, index) {
         fileContent += '\t' + blogentry.toString(blogEntry);
